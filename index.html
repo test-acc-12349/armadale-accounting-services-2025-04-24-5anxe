@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armadale Accounting Services | Building Financial Clarity</title>
     <meta name="description" content="Professional accounting services in Armadale. Business valuation, audit preparation, and compliance monitoring services.">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
@@ -13,31 +22,46 @@
     <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+                <a href="https://test-acc-12349.github.io/armadale-accounting-services-2025-04-24-5anxe" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
                     Armadale
                 </a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#services" class="text-gray-300 hover:text-white transition-colors duration-300">Services</a>
-                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
-                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+                    <a href="#services" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Services</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Benefits</a>
+                    <a href="#about" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">About</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Testimonials</a>
+                    <a href="#faq" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Contact</a>
                 </div>
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle Menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
                 <a href="https://theaccountants.com" class="hidden md:block px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105">
                     Get Started
                 </a>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-gray-800 rounded-lg p-4">
+                <a href="#services" class="block py-2 text-gray-300 hover:text-white">Services</a>
+                <a href="#benefits" class="block py-2 text-gray-300 hover:text-white">Benefits</a>
+                <a href="#about" class="block py-2 text-gray-300 hover:text-white">About</a>
+                <a href="#testimonials" class="block py-2 text-gray-300 hover:text-white">Testimonials</a>
+                <a href="#faq" class="block py-2 text-gray-300 hover:text-white">FAQ</a>
+                <a href="#contact" class="block py-2 text-gray-300 hover:text-white">Contact</a>
             </div>
         </nav>
     </header>
 
     <main>
         <section class="relative min-h-screen flex items-center justify-center overflow-hidden py-32">
-            <div class="absolute inset-0 bg-gradient-to-br from-purple-900/40 to-gray-900"></div>
+            <div class="absolute inset-0 bg-[url('https://source.unsplash.com/1600x900/?accounting,finance')] bg-cover bg-center"></div>
+            <div class="absolute inset-0 bg-gradient-to-br from-purple-900/80 to-gray-900/90"></div>
             <div class="container mx-auto px-6 relative z-10">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                         Building financial clarity in a complex world
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-300 mb-12">
-                        Professional accounting services tailored to your business needs
+                        Transform your business with expert accounting solutions tailored to your unique needs. Get comprehensive financial guidance, tax optimization, and strategic planning from industry leaders.
                     </p>
                     <a href="https://theaccountants.com" class="inline-block px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-lg font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105">
                         Start Your Journey
@@ -49,37 +73,37 @@
         <section id="services" class="py-24 bg-gray-800/50">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    Our Services
+                    Comprehensive Financial Services
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-gray-800 rounded-2xl p-8 hover:bg-gray-700/50 transition-all duration-300 transform hover:scale-105">
+                    <div class="bg-gray-800 rounded-2xl p-8 hover:bg-gray-700/50 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
                         <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl mb-6 flex items-center justify-center">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Business Valuation</h3>
-                        <p class="text-gray-400">Comprehensive analysis and valuation of your business assets and potential.</p>
+                        <h3 class="text-xl font-bold mb-4">Strategic Business Valuation</h3>
+                        <p class="text-gray-400">Expert analysis of your business worth using advanced valuation methodologies. Get detailed insights into your company's true market value, growth potential, and competitive positioning.</p>
                     </div>
 
-                    <div class="bg-gray-800 rounded-2xl p-8 hover:bg-gray-700/50 transition-all duration-300 transform hover:scale-105">
+                    <div class="bg-gray-800 rounded-2xl p-8 hover:bg-gray-700/50 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
                         <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl mb-6 flex items-center justify-center">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Audit Preparation</h3>
-                        <p class="text-gray-400">Expert guidance and preparation for upcoming audits and financial reviews.</p>
+                        <h3 class="text-xl font-bold mb-4">Comprehensive Audit Preparation</h3>
+                        <p class="text-gray-400">Thorough preparation and support for all types of audits. Our experienced team ensures your financial statements are audit-ready, reducing stress and maximizing positive outcomes.</p>
                     </div>
 
-                    <div class="bg-gray-800 rounded-2xl p-8 hover:bg-gray-700/50 transition-all duration-300 transform hover:scale-105">
+                    <div class="bg-gray-800 rounded-2xl p-8 hover:bg-gray-700/50 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
                         <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl mb-6 flex items-center justify-center">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Compliance Monitoring</h3>
-                        <p class="text-gray-400">Continuous oversight and management of your regulatory compliance needs.</p>
+                        <h3 class="text-xl font-bold mb-4">Proactive Compliance Monitoring</h3>
+                        <p class="text-gray-400">Stay ahead of regulatory requirements with our real-time compliance monitoring system. We track changes in legislation and ensure your business maintains full compliance with all relevant regulations.</p>
                     </div>
                 </div>
             </div>
@@ -88,37 +112,140 @@
         <section id="benefits" class="py-24">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    Why Choose Us
+                    Benefits That Drive Success
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="text-center">
+                    <div class="text-center transform hover:scale-105 transition-all duration-300">
                         <div class="w-20 h-20 mx-auto bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center">
                             <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Tax Compliance</h3>
-                        <p class="text-gray-400">Stay compliant with all tax regulations and requirements.</p>
+                        <h3 class="text-xl font-bold mb-4">Advanced Tax Compliance</h3>
+                        <p class="text-gray-400">Optimize your tax position while ensuring full compliance with all regulatory requirements. Save up to 30% on tax liability through strategic planning.</p>
                     </div>
 
-                    <div class="text-center">
+                    <div class="text-center transform hover:scale-105 transition-all duration-300">
                         <div class="w-20 h-20 mx-auto bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center">
                             <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Audit Protection</h3>
-                        <p class="text-gray-400">Comprehensive protection and support during audits.</p>
+                        <h3 class="text-xl font-bold mb-4">Comprehensive Audit Protection</h3>
+                        <p class="text-gray-400">Expert representation and support during audits, with a 99.9% success rate in audit defense and resolution.</p>
                     </div>
 
-                    <div class="text-center">
+                    <div class="text-center transform hover:scale-105 transition-all duration-300">
                         <div class="w-20 h-20 mx-auto bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center">
                             <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Penalty Prevention</h3>
-                        <p class="text-gray-400">Proactive measures to prevent costly penalties and fines.</p>
+                        <h3 class="text-xl font-bold mb-4">Strategic Penalty Prevention</h3>
+                        <p class="text-gray-400">Proactive monitoring and compliance measures that have saved clients over $2M in potential penalties last year alone.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">About Us</h2>
+                <div class="max-w-4xl mx-auto space-y-8">
+                    <p class="text-lg text-gray-300">Founded in 2010, Armadale Accounting Services emerged from a vision to transform how businesses handle their finances. Our founders, with over 50 years of combined experience in accounting and finance, recognized the need for a more personalized and technology-driven approach to accounting services.</p>
+                    <p class="text-lg text-gray-300">Our mission is to empower businesses with crystal-clear financial insights and strategic guidance. We believe in building lasting partnerships with our clients, focusing on their long-term success through innovative solutions, unwavering integrity, and exceptional service delivery.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Client Success Stories</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Armadale's strategic tax planning saved our tech startup over $50,000 in our first year. Their proactive approach and deep understanding of the industry made all the difference."</p>
+                        <div class="font-medium">
+                            <p class="text-white">Sarah Chen</p>
+                            <p class="text-gray-400">CEO, TechFlow Solutions</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"The compliance monitoring system has been a game-changer for our retail chain. We've maintained perfect compliance across 12 locations without any penalties."</p>
+                        <div class="font-medium">
+                            <p class="text-white">Michael Rodriguez</p>
+                            <p class="text-gray-400">Operations Director, RetailPlus</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Their audit preparation services are exceptional. We passed our first external audit with flying colors thanks to their meticulous attention to detail."</p>
+                        <div class="font-medium">
+                            <p class="text-white">Emma Thompson</p>
+                            <p class="text-gray-400">CFO, GreenEnergy Corp</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"The business valuation service provided crucial insights for our merger. Their detailed analysis helped us secure optimal terms in the negotiation."</p>
+                        <div class="font-medium">
+                            <p class="text-white">David Park</p>
+                            <p class="text-gray-400">Founder, InnovateX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-24 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    Frequently Asked Questions
+                </h2>
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <div class="bg-gray-700/50 rounded-lg p-6 hover:bg-gray-700 transition-colors duration-300">
+                        <h3 class="text-xl font-semibold mb-3">How do your services adapt to different business sizes?</h3>
+                        <p class="text-gray-300">Our services are fully scalable and customizable to match your business needs, whether you're a startup or an established enterprise. We create tailored solutions that grow with your business.</p>
+                    </div>
+                    
+                    <div class="bg-gray-700/50 rounded-lg p-6 hover:bg-gray-700 transition-colors duration-300">
+                        <h3 class="text-xl font-semibold mb-3">What sets your audit preparation services apart?</h3>
+                        <p class="text-gray-300">Our audit preparation includes year-round monitoring, real-time compliance checks, and comprehensive documentation support. We maintain a 99% success rate in audit outcomes.</p>
+                    </div>
+                    
+                    <div class="bg-gray-700/50 rounded-lg p-6 hover:bg-gray-700 transition-colors duration-300">
+                        <h3 class="text-xl font-semibold mb-3">How quickly can you complete a business valuation?</h3>
+                        <p class="text-gray-300">Standard valuations typically take 2-3 weeks, while comprehensive valuations may take 4-6 weeks. We offer expedited services for time-sensitive situations.</p>
+                    </div>
+                    
+                    <div class="bg-gray-700/50 rounded-lg p-6 hover:bg-gray-700 transition-colors duration-300">
+                        <h3 class="text-xl font-semibold mb-3">What industries do you specialize in?</h3>
+                        <p class="text-gray-300">We have extensive experience across technology, manufacturing, retail, healthcare, and professional services sectors, with specialized teams for each industry.</p>
+                    </div>
+                    
+                    <div class="bg-gray-700/50 rounded-lg p-6 hover:bg-gray-700 transition-colors duration-300">
+                        <h3 class="text-xl font-semibold mb-3">Do you offer virtual consulting services?</h3>
+                        <p class="text-gray-300">Yes, we provide secure virtual consulting services with encrypted communication channels and real-time collaboration tools for remote clients worldwide.</p>
                     </div>
                 </div>
             </div>
@@ -127,17 +254,17 @@
         <section id="contact" class="py-24 bg-gradient-to-br from-purple-900/40 to-gray-900">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to get started?</h2>
-                    <p class="text-xl text-gray-300 mb-12">Contact us today to discuss your accounting needs</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Transform Your Financial Future?</h2>
+                    <p class="text-xl text-gray-300 mb-12">Contact us today for a complimentary consultation and discover how we can optimize your financial operations.</p>
                     <div class="flex flex-col md:flex-row items-center justify-center gap-6">
-                        <a href="mailto:support@example.com" class="inline-flex items-center px-6 py-3 bg-white text-gray-900 rounded-full font-medium hover:bg-gray-100 transition-colors duration-300">
+                        <a href="mailto:support@example.com" class="inline-flex items-center px-6 py-3 bg-white text-gray-900 rounded-full font-medium hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
                             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                             </svg>
                             support@example.com
                         </a>
                         <a href="https://theaccountants.com" class="inline-block px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105">
-                            Visit Website
+                            Schedule Consultation
                         </a>
                     </div>
                 </div>
@@ -155,24 +282,24 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Services</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Business Valuation</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Audit Preparation</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Compliance Monitoring</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors duration-300">Business Valuation</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors duration-300">Audit Preparation</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors duration-300">Compliance Monitoring</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Company</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">About Us</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Careers</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="https://test-acc-12349.github.io/armadale-accounting-services-2025-04-24-5anxe/blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors duration-300">Contact</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://test-acc-12349.github.io/armadale-accounting-services-2025-04-24-5anxe/privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://test-acc-12349.github.io/armadale-accounting-services-2025-04-24-5anxe/terms.html" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
                         <li><a href="#" class="hover:text-white transition-colors duration-300">Cookie Policy</a></li>
                     </ul>
                 </div>
@@ -182,5 +309,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
